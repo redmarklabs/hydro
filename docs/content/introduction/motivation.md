@@ -10,7 +10,7 @@ As a result, developers can create applications with server-side rendering (SSR)
 and single-page application (SPA) feeling without writing JavaScript.
 
 The motivation for building Hydro was to make the web development in .NET
-simple, streamlined and enjoyable for both back-end and front-end, while keeping all the powerful features of the .NET ecosystem.
+simple, streamlined, and enjoyable for both back-end and front-end, while keeping all the powerful features of the .NET ecosystem.
 The main goal was to use well-known patterns and practices to let developers smoothly deliver new features.
 
 Hydro is a response to the growing complexity of the front-end ecosystem. Thousands of packages
@@ -20,20 +20,20 @@ unnecessary problems to handle, front-end frameworks become more and more sophis
 ## Hydro's features
 
 Hydro offers the following features:
-- Server side rendering
+- Server-side rendering
 - Navigation enhancements
 - Component state persistence across requests
 - UI interactivity
 
-Above statements are achieved by using simple, yet powerful, and well-tested techniques like Razor views (cshtml), view components and AJAX calls (internally via Alpine.js).
+The above statements are achieved by using simple yet powerful and well-tested techniques like Razor views (cshtml), view components, and AJAX calls (internally via Alpine.js).
 
 Let's take a look at a simplified sequence of events that happens in a Hydro application:
-- Application renders pages and Hydro components on the first call using Razor view engine (in Razor Pages or MVC).
+- Application renders pages and Hydro components on the first call using the Razor view engine (in Razor Pages or MVC).
 - State of the components is serialized and stored in the DOM.
 - Components contain actions used for running business logic and changing the component state; those actions are run via HTTP requests and can be triggered by the browser events like click, submit, keydown, etc.
 - On each request to the Hydro component, the application generates HTML for affected components and gracefully morphs the DOM with the changes.
 
-Such an approach makes state management very easy. Since all the components keep their state across requests using DOM on the client side as a temporary storage, regardless of the point in time, the state will be always the same as it was on the last render. Any connectivity issues, like lost
+Such an approach makes state management very easy. Since all the components keep their state across requests using DOM on the client side as a temporary storage, regardless of the point in time, the state will always be the same as it was on the last render. Any connectivity issues, like lost
 connections, have no impact here.
 
 ## Transport
