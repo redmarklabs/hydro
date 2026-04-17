@@ -20,9 +20,9 @@ unnecessary problems to handle, front-end frameworks become more and more sophis
 ## Hydro's features
 
 Hydro offers the following features:
-- server side rendering
-- navigation enhancements
-- component state persistence across requests
+- Server side rendering
+- Navigation enhancements
+- Component state persistence across requests
 - UI interactivity
 
 Above statements are achieved by using simple, yet powerful, and well-tested techniques like Razor views (cshtml), view components and AJAX calls (internally via Alpine.js).
