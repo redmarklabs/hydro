@@ -7,9 +7,9 @@ outline: deep
 Hydro components are extended versions of View Components from ASP.NET Core.
 
 To build a component you will need:
-- component view (a cshtml file)
-- component code-behind (a class that derives from `HydroComponent`)
-- (optional) component styles
+- Component view (a cshtml file)
+- Component code-behind (a class that derives from `HydroComponent`)
+- (Optional) component styles
 
 The place for keeping the components depends on your project settings. In Razor Pages by default it will be either `~/Pages/Components/` or `~/Components/` folder, but it can be customized. You can decide if you want to create separate folders for each component or not.
 
